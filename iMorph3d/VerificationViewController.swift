@@ -15,16 +15,17 @@ class VerificationViewController: UIViewController, OTPFieldViewDelegate {
     func setupOtpView() {
         
         self.otpTextFieldView.fieldsCount = 4
-        self.otpTextFieldView.fieldBorderWidth = 2
-        self.otpTextFieldView.defaultBorderColor = UIColor.black
-        self.otpTextFieldView.filledBorderColor = UIColor.green
+        self.otpTextFieldView.fieldBorderWidth = 1
+        self.otpTextFieldView.defaultBorderColor = UIColor.white
+        self.otpTextFieldView.filledBorderColor = UIColor.darkGray
         self.otpTextFieldView.cursorColor = UIColor.red
-        self.otpTextFieldView.displayType = .underlinedBottom
+        self.otpTextFieldView.displayType = .roundedCorner
         self.otpTextFieldView.fieldSize = 40
         self.otpTextFieldView.separatorSpace = 8
         self.otpTextFieldView.shouldAllowIntermediateEditing = false
         self.otpTextFieldView.delegate = self
         self.otpTextFieldView.initializeUI()
+        
     }
     
     func shouldBecomeFirstResponderForOTP(otpTextFieldIndex index: Int) -> Bool {
@@ -46,8 +47,15 @@ class VerificationViewController: UIViewController, OTPFieldViewDelegate {
         // remove title for left bar button item
         navigationController?.navigationBar.topItem?.title = ""
         
+        hideKeyboardWhenTappedAround()
         setupOtpView()
         
     }
     
-}   // #54
+    @IBAction func goBack(_ sender: UIButton) {
+        
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+}   // #62
