@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026C18F82578DD8A00993CB8 /* VerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C18F72578DD8A00993CB8 /* VerificationViewController.swift */; };
 		026C782C2578C58A00C8F868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C782B2578C58A00C8F868 /* AppDelegate.swift */; };
 		026C782E2578C58A00C8F868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C782D2578C58A00C8F868 /* SceneDelegate.swift */; };
 		026C78302578C58A00C8F868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C782F2578C58A00C8F868 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026C18F72578DD8A00993CB8 /* VerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationViewController.swift; sourceTree = "<group>"; };
 		026C78282578C58A00C8F868 /* iMorph3d.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMorph3d.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026C782B2578C58A00C8F868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		026C782D2578C58A00C8F868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				026C78362578C58C00C8F868 /* LaunchScreen.storyboard */,
 				026C78312578C58A00C8F868 /* Main.storyboard */,
 				026C782F2578C58A00C8F868 /* ViewController.swift */,
+				026C18F72578DD8A00993CB8 /* VerificationViewController.swift */,
 				026C78432578D32A00C8F868 /* iOSDropDown.swift */,
 				026C78392578C58C00C8F868 /* Info.plist */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				026C78442578D32A00C8F868 /* iOSDropDown.swift in Sources */,
 				026C78302578C58A00C8F868 /* ViewController.swift in Sources */,
+				026C18F82578DD8A00993CB8 /* VerificationViewController.swift in Sources */,
 				026C782C2578C58A00C8F868 /* AppDelegate.swift in Sources */,
 				026C782E2578C58A00C8F868 /* SceneDelegate.swift in Sources */,
 			);
