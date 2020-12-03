@@ -10,6 +10,7 @@ import OTPFieldView
 
 class VerificationViewController: UIViewController, OTPFieldViewDelegate {
     
+    // Outlets
     @IBOutlet var otpTextFieldView: OTPFieldView!
     
     func setupOtpView() {
@@ -48,6 +49,7 @@ class VerificationViewController: UIViewController, OTPFieldViewDelegate {
         navigationController?.navigationBar.topItem?.title = ""
         
         hideKeyboardWhenTappedAround()
+        
         setupOtpView()
         
     }
@@ -58,4 +60,4 @@ class VerificationViewController: UIViewController, OTPFieldViewDelegate {
         
     }
     
-}   // #62
+}   // #64
