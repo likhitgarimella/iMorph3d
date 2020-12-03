@@ -62,6 +62,21 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func sendTapped(_ sender: UIButton) {
+        
+        if (countryCode.text!.isEmpty || mobileNumber.text!.isEmpty) {
+            // Alert for empty fields
+            let myAlert = UIAlertController(title: "Invalid", message: "Please enter your phone number", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil)
+            myAlert.addAction(okAction)
+            self.present(myAlert, animated: true, completion: nil)
+            return
+        }
+        
+        self.performSegue(withIdentifier: "goToOtp", sender: self)
+        
+    }
+    
 }
 
 // Dismiss keyboard on tapping anywhere
@@ -76,4 +91,4 @@ extension UIViewController {
         view.endEditing(true)
     }
     
-}   // #80
+}   // #95

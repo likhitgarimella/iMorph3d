@@ -1,0 +1,6 @@
+framework module Pods_iMorph3d {
+  umbrella header "Pods-iMorph3d-umbrella.h"
+
+  export *
+  module * { export * }
+}

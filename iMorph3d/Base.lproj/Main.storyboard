@@ -85,7 +85,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="WqO-ek-0Am" kind="show" id="jiE-qN-Kz3"/>
+                                            <action selector="sendTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3T4-7v-6bt"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -120,6 +120,7 @@
                     <connections>
                         <outlet property="countryCode" destination="rbR-KA-Ulr" id="RT1-JO-Uv9"/>
                         <outlet property="mobileNumber" destination="mj7-k4-DnK" id="6KR-nf-8Gn"/>
+                        <segue destination="WqO-ek-0Am" kind="show" identifier="goToOtp" id="qao-cP-Gwr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

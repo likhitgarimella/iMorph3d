@@ -1,0 +1,6 @@
+framework module SFOTPTextField {
+  umbrella header "SFOTPTextField-umbrella.h"
+
+  export *
+  module * { export * }
+}
