@@ -7,10 +7,41 @@
 
 import UIKit
 
-class PictureViewController: UIViewController {
+class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
+    // Outlets
     @IBOutlet var picture: UIImageView!
     
+    let imagePicker = UIImagePickerController()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+    }
+    
+    @IBAction func addBtn(_ sender: UIButton) {
+        
+        let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        
+        alert.addAction(UIAlertAction(title: "Photo Gallery", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .photoLibrary
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { (button) in
+            self.imagePicker.sourceType = .camera
+            self.present(self.imagePicker, animated: true, completion: nil)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        present(alert, animated: true, completion: nil)
+        
+    }
+    
+    /*
     // global variable for selected image
     var selectedImage: UIImage?
     
@@ -45,9 +76,11 @@ class PictureViewController: UIViewController {
         present(pickerController, animated: true, completion: nil)
         
     }
+    */
     
 }
 
+/*
 extension PictureViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -72,4 +105,5 @@ extension PictureViewController: UIImagePickerControllerDelegate, UINavigationCo
         
     }
     
-}   // #76
+}
+*/  // #110

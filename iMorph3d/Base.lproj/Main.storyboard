@@ -5,6 +5,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -322,26 +323,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5X-QA-edy">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
+                                <rect key="frame" x="161" y="20" width="414" height="280"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="414" id="K3w-Jh-TsE"/>
+                                    <constraint firstAttribute="height" constant="280" id="bFa-Jd-lqZ"/>
+                                    <constraint firstAttribute="width" constant="414" id="kxb-hj-r6A"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Picture" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hh5-DC-6AF">
-                                <rect key="frame" x="493.99999999999994" y="191.66666666666666" width="161.33333333333331" height="30.666666666666657"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
-                                <color key="textColor" red="0.0" green="0.61176470589999998" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTA-qF-nEh">
+                                <rect key="frame" x="308" y="354" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="0IJ-Sv-ynQ"/>
+                                    <constraint firstAttribute="height" constant="40" id="bsu-cE-xdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" systemColor="systemBlueColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addBtn:" destination="Gwh-IJ-Ajj" eventType="touchUpInside" id="P3k-Ry-mpT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hVn-5i-d9z"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Hh5-DC-6AF" firstAttribute="leading" secondItem="D5X-QA-edy" secondAttribute="trailing" constant="80" id="3aF-4J-m0v"/>
-                            <constraint firstItem="Hh5-DC-6AF" firstAttribute="centerY" secondItem="Gc7-sQ-2dZ" secondAttribute="centerY" id="Fph-9M-Xgh"/>
-                            <constraint firstItem="D5X-QA-edy" firstAttribute="leading" secondItem="hVn-5i-d9z" secondAttribute="leading" id="M2x-Hh-1Mw"/>
-                            <constraint firstItem="hVn-5i-d9z" firstAttribute="bottom" secondItem="D5X-QA-edy" secondAttribute="bottom" id="UCc-hn-rwL"/>
-                            <constraint firstItem="D5X-QA-edy" firstAttribute="top" secondItem="hVn-5i-d9z" secondAttribute="top" id="wtU-nH-aNt"/>
+                            <constraint firstItem="D5X-QA-edy" firstAttribute="centerX" secondItem="Gc7-sQ-2dZ" secondAttribute="centerX" id="2aF-3H-Nvw"/>
+                            <constraint firstItem="D5X-QA-edy" firstAttribute="top" secondItem="hVn-5i-d9z" secondAttribute="top" constant="20" id="R73-bd-6B6"/>
+                            <constraint firstItem="UTA-qF-nEh" firstAttribute="centerX" secondItem="Gc7-sQ-2dZ" secondAttribute="centerX" id="koW-jG-HUc"/>
+                            <constraint firstItem="hVn-5i-d9z" firstAttribute="bottom" secondItem="UTA-qF-nEh" secondAttribute="bottom" constant="20" id="s6j-gG-Fhi"/>
                         </constraints>
                     </view>
                     <connections>
@@ -371,8 +386,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="qao-cP-Gwr"/>
-        <segue reference="yOA-Nl-7mS"/>
+        <segue reference="L1B-9D-etr"/>
         <segue reference="AKW-PG-8pv"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -384,5 +398,8 @@
         <image name="skip" width="85" height="34"/>
         <image name="title" width="177" height="108"/>
         <image name="tutorial" width="102" height="52"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
