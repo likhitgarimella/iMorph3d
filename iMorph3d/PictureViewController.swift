@@ -17,7 +17,14 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Image properties
+        picture.layer.masksToBounds = true
+        picture.layer.cornerRadius = 6
+        picture.layer.borderWidth = 1
+        picture.layer.borderColor = UIColor.lightGray.cgColor
         
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = true
         
     }
     
@@ -38,6 +45,14 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         
         present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        guard let pickedImage = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else { return }
+        picture.image = pickedImage
+        dismiss(animated: true, completion: nil)
         
     }
     
@@ -106,4 +121,4 @@ extension PictureViewController: UIImagePickerControllerDelegate, UINavigationCo
     }
     
 }
-*/  // #110
+*/  // #125
