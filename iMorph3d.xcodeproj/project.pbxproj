@@ -58,10 +58,10 @@
 			children = (
 				026C782B2578C58A00C8F868 /* AppDelegate.swift */,
 				026C782D2578C58A00C8F868 /* SceneDelegate.swift */,
-				026C782F2578C58A00C8F868 /* ViewController.swift */,
-				026C78312578C58A00C8F868 /* Main.storyboard */,
 				026C78342578C58C00C8F868 /* Assets.xcassets */,
 				026C78362578C58C00C8F868 /* LaunchScreen.storyboard */,
+				026C78312578C58A00C8F868 /* Main.storyboard */,
+				026C782F2578C58A00C8F868 /* ViewController.swift */,
 				026C78392578C58C00C8F868 /* Info.plist */,
 			);
 			path = iMorph3d;
@@ -289,14 +289,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BWS8985H;
 				INFOPLIST_FILE = iMorph3d/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.likhitgarimella.iMorph3d;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,14 +310,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77BWS8985H;
 				INFOPLIST_FILE = iMorph3d/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.likhitgarimella.iMorph3d;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
