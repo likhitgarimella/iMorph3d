@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5B0B4EFF0518D71CFAF3326AE63ABDDB"
-               BuildableName = "SFOTPTextField.framework"
-               BlueprintName = "SFOTPTextField"
+               BlueprintIdentifier = "3BFA50DA07196AD4DB6512C559850F45"
+               BuildableName = "OTPFieldView.framework"
+               BlueprintName = "OTPFieldView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

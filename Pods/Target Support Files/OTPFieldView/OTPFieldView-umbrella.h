@@ -10,7 +10,8 @@
 #endif
 #endif
 
+#import "OTPFieldView.h"
 
-FOUNDATION_EXPORT double SFOTPTextFieldVersionNumber;
-FOUNDATION_EXPORT const unsigned char SFOTPTextFieldVersionString[];
+FOUNDATION_EXPORT double OTPFieldViewVersionNumber;
+FOUNDATION_EXPORT const unsigned char OTPFieldViewVersionString[];
 

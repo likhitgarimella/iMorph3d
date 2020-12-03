@@ -7,6 +7,6 @@ target 'iMorph3d' do
 
   # Pods for iMorph3d
 
-pod 'SFOTPTextField', '~> 1.0.0'
+pod 'OTPFieldView'
 
 end
