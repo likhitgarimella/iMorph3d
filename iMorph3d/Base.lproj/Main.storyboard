@@ -89,7 +89,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="MpZ-qQ-CGc" firstAttribute="centerX" secondItem="iNQ-2c-wcU" secondAttribute="centerX" id="Gik-pQ-ooW"/>
                                     <constraint firstItem="ako-MS-KUw" firstAttribute="centerX" secondItem="iNQ-2c-wcU" secondAttribute="centerX" id="HTi-ZP-uL0"/>
@@ -141,62 +141,28 @@
                                 <color key="textColor" red="0.0" green="0.61176470589999998" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="DH1-Ce-kUN">
-                                <rect key="frame" x="268" y="114.33333333333331" width="200" height="44"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="GVv-6T-dfY">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="FgQ-N1-JSZ"/>
-                                            <constraint firstAttribute="height" constant="44" id="Stz-nE-YFn"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="UEx-xX-Ttl">
-                                        <rect key="frame" x="52" y="0.0" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="dJe-4Q-JRW"/>
-                                            <constraint firstAttribute="height" constant="44" id="rIn-RW-6f2"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="74Y-fk-hsh">
-                                        <rect key="frame" x="104" y="0.0" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="44" id="0qx-mI-14F"/>
-                                            <constraint firstAttribute="height" constant="44" id="EOc-TZ-0Bs"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="zSl-hT-EQD">
-                                        <rect key="frame" x="156" y="0.0" width="44" height="44"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="6el-5U-lvb"/>
-                                            <constraint firstAttribute="width" constant="44" id="qSe-bo-NSe"/>
-                                        </constraints>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cf-sU-oza" customClass="OTPFieldView" customModule="OTPFieldView">
+                                <rect key="frame" x="256" y="134.33333333333334" width="224" height="44"/>
+                                <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1Es-2s-Uu0"/>
+                                    <constraint firstAttribute="width" constant="224" id="XXe-pI-4Ai"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b31-iD-Ngp"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="GYP-Vz-izV" firstAttribute="centerX" secondItem="1xd-52-cHg" secondAttribute="centerX" id="F2c-Up-qFB"/>
+                            <constraint firstItem="8cf-sU-oza" firstAttribute="centerX" secondItem="1xd-52-cHg" secondAttribute="centerX" id="OBf-1P-von"/>
+                            <constraint firstItem="8cf-sU-oza" firstAttribute="top" secondItem="GYP-Vz-izV" secondAttribute="bottom" constant="40" id="Rhz-lI-DkB"/>
                             <constraint firstItem="GYP-Vz-izV" firstAttribute="top" secondItem="b31-iD-Ngp" secondAttribute="top" constant="20" id="Tb3-ti-1dR"/>
-                            <constraint firstItem="DH1-Ce-kUN" firstAttribute="top" secondItem="GYP-Vz-izV" secondAttribute="bottom" constant="20" id="rfk-IH-27Q"/>
-                            <constraint firstItem="DH1-Ce-kUN" firstAttribute="centerX" secondItem="1xd-52-cHg" secondAttribute="centerX" id="uTO-M9-mRe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X0n-3t-GYb"/>
+                    <connections>
+                        <outlet property="otpTextFieldView" destination="8cf-sU-oza" id="vSR-pj-QW2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orJ-Le-iWR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
