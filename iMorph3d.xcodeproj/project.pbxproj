@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		026C78352578C58C00C8F868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026C78342578C58C00C8F868 /* Assets.xcassets */; };
 		026C78382578C58C00C8F868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026C78362578C58C00C8F868 /* LaunchScreen.storyboard */; };
 		026C78442578D32A00C8F868 /* iOSDropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026C78432578D32A00C8F868 /* iOSDropDown.swift */; };
+		02C10D4125790A4700921BE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02C10D4025790A4700921BE9 /* HomeViewController.swift */; };
 		CDC1E11BE5B8BAF8364661A5 /* Pods_iMorph3d.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E44847E2D6E1B409EB68654 /* Pods_iMorph3d.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		026C78372578C58C00C8F868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026C78392578C58C00C8F868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		026C78432578D32A00C8F868 /* iOSDropDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSDropDown.swift; sourceTree = "<group>"; };
+		02C10D4025790A4700921BE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0D1908F9387CAE976E62215C /* Pods-iMorph3d.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMorph3d.debug.xcconfig"; path = "Target Support Files/Pods-iMorph3d/Pods-iMorph3d.debug.xcconfig"; sourceTree = "<group>"; };
 		2BCF479F304C87914E7C9DE9 /* Pods-iMorph3d.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMorph3d.release.xcconfig"; path = "Target Support Files/Pods-iMorph3d/Pods-iMorph3d.release.xcconfig"; sourceTree = "<group>"; };
 		4E44847E2D6E1B409EB68654 /* Pods_iMorph3d.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMorph3d.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +76,7 @@
 				026C78312578C58A00C8F868 /* Main.storyboard */,
 				026C782F2578C58A00C8F868 /* ViewController.swift */,
 				026C18F72578DD8A00993CB8 /* VerificationViewController.swift */,
+				02C10D4025790A4700921BE9 /* HomeViewController.swift */,
 				026C78432578D32A00C8F868 /* iOSDropDown.swift */,
 				026C78392578C58C00C8F868 /* Info.plist */,
 			);
@@ -94,7 +97,6 @@
 				0D1908F9387CAE976E62215C /* Pods-iMorph3d.debug.xcconfig */,
 				2BCF479F304C87914E7C9DE9 /* Pods-iMorph3d.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -217,6 +219,7 @@
 				026C18F82578DD8A00993CB8 /* VerificationViewController.swift in Sources */,
 				026C782C2578C58A00C8F868 /* AppDelegate.swift in Sources */,
 				026C782E2578C58A00C8F868 /* SceneDelegate.swift in Sources */,
+				02C10D4125790A4700921BE9 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
